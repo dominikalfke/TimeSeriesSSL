@@ -270,7 +270,7 @@ if __name__ == '__main__':
         if split_size is not None:
             dataset_name += '_split{}'.format(split_size)
         
-        architecture_name = 'StandardGCN'
+        architecture_name = 'GCN'
         if args.loops:
             architecture_name += '_loops'
         if args.sparsify is not None:
