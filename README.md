@@ -4,7 +4,7 @@ A study of distance measures and learning methods for semi-supervised learning o
 ## Prerequesites
 
 Other than scipy/numpy, the following distance measures and learning methods have their own prerequesites:
-* DTW distance: `fastdtw` from [https://github.com/slaypni/fastdtw]
+* DTW distance: `dtaidistance` from [https://github.com/wannesm/dtaidistance]
 * SoftDTW distance: `sdtw` from [https://github.com/mblondel/soft-dtw]
 * Matrix Profile distance: `stumpy` from [https://github.com/TDAmeritrade/stumpy]
 * Graph Convolutional Network: `torch` and `torch-geometric` from [https://github.com/rusty1s/pytorch_geometric]

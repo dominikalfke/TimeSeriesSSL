@@ -30,18 +30,9 @@ def shift_and_scale(features):
     return features
 
 def distance_matrix_dtw(features):
-    
-    from fastdtw import fastdtw
-
+    from dtaidistance import dtw
     features = shift_and_scale(features)
-    num_samples = features.shape[0]
-    
-    distances = np.zeros((num_samples, num_samples))
-    for i in range(num_samples):
-        for j in range(i):
-            distances[i,j] = distances[j,i] = fastdtw(features[i], features[j])[0]
-    
-    return distances
+    return dtw.distance_matrix_fast(features)
 
 def distance_matrix_sdtw(features, gamma=0.1, correction=True):
     
